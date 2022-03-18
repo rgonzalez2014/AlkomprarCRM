@@ -1,0 +1,49 @@
+apply plugin: 'java-library'
+// Para agregar un comando que se llama aggregate, que es de Serenity y es para construir el reporte
+apply plugin: 'net.serenity-bdd.aggregator'
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        // De aqui viene el plugin aggregator que esta en la linea 4
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.80")
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+
+    // Dependencias para poder automatizar con Serenity
+    testImplementation 'net.serenity-bdd:serenity-junit:2.0.80'
+    testImplementation 'net.serenity-bdd:serenity-core:2.0.80'
+    testImplementation('junit:junit:4.12')
+    testImplementation('org.assertj:assertj-core:1.7.0')
+    testImplementation('org.slf4j:slf4j-simple:1.7.7')
+
+    implementation 'net.serenity-bdd:serenity-core:1.9.9'
+    implementation 'net.serenity-bdd:serenity-junit:1.9.9'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+
+
+
+    test {
+        //Ignorar los fallos es ejecutar todas las pruebas asi alguna falle
+        ignoreFailures = true
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    gradle.startParameter.continueOnFailure = true
+
+}
