@@ -1,4 +1,4 @@
-package models;
+package runners.models;
 
 public class DataPanelCliente {
 

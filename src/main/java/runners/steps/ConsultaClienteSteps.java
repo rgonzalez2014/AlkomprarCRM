@@ -1,8 +1,8 @@
-package steps;
+package runners.steps;
 
 
+import runners.page.ConsultaCliente;
 import net.thucydides.core.annotations.Step;
-import page.ConsultaCliente;
 
 
 public class ConsultaClienteSteps {
