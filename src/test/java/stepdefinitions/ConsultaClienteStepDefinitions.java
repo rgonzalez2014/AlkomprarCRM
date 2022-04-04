@@ -3,9 +3,9 @@ package stepdefinitions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import runners.models.DataPanelCliente;
+import models.DataPanelCliente;
 import net.thucydides.core.annotations.Steps;
-import runners.steps.ConsultaClienteSteps;
+import step.ConsultaClienteSteps;
 
 import java.util.List;
 

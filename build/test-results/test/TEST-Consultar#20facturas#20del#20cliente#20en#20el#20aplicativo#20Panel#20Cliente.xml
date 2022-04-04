@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Consultar facturas del cliente en el aplicativo Panel Cliente" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-04-01T17:32:07" hostname="DIBOG-AGROGER" time="38.583">
+<testsuite name="Consultar facturas del cliente en el aplicativo Panel Cliente" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-04-04T16:35:38" hostname="DIBOG-AGROGER" time="50.206">
   <properties/>
-  <testcase name="Consultar facturas del cliente" classname="Consultar facturas del cliente en el aplicativo Panel Cliente" time="38.583">
-    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: mat-input-2 (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: mat-input-2 (tried for 20 second(s) with 500 milliseconds interval)
-	at app//org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at app//runners.page.ConsultaCliente.ingresarDocumento(ConsultaCliente.java:52)
-	at app//runners.steps.ConsultaClienteSteps.ingresarDocumento(ConsultaClienteSteps.java:50)
-	at app//runners.steps.ConsultaClienteSteps$$EnhancerByCGLIB$$276a9a60.CGLIB$ingresarDocumento$4(&lt;generated&gt;)
-	at app//runners.steps.ConsultaClienteSteps$$EnhancerByCGLIB$$276a9a60$$FastClassByCGLIB$$30bec344.invoke(&lt;generated&gt;)
-	at app//net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at app//runners.steps.ConsultaClienteSteps$$EnhancerByCGLIB$$276a9a60.ingresarDocumento(&lt;generated&gt;)
-	at app//stepdefinitions.ConsultaClienteStepDefinitions.se_consulta_un_documento(ConsultaClienteStepDefinitions.java:36)
-	at ✽.Se consulta un documento(src/test/resources/features/consultacliente.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#mat\-input\-2&quot;}
+  <testcase name="Consultar facturas del cliente" classname="Consultar facturas del cliente en el aplicativo Panel Cliente" time="50.206">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#mat\-tab\-label\-0\-2&quot;}&#10;  (Session info: chrome=99.0.4844.84)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DIBOG-AGROGER', ip: '192.169.25.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\80817985\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4cabb0c678d782baba43bcdc6ba546cc&#10;*** Element info: {Using=id, value=mat-tab-label-0-2}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#mat\-tab\-label\-0\-2&quot;}
   (Session info: chrome=99.0.4844.84)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DIBOG-AGROGER', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+System info: host: 'DIBOG-AGROGER', ip: '192.169.25.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\80817985\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 28597ac49f3684e8b37a2b27dd3b4676
-*** Element info: {Using=id, value=mat-input-2}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\80817985\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4cabb0c678d782baba43bcdc6ba546cc
+*** Element info: {Using=id, value=mat-tab-label-0-2}
 	at java.base@11.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -43,13 +26,10 @@ Session ID: 28597ac49f3684e8b37a2b27dd3b4676
 	at app//org.openqa.selenium.By$ById.findElement(By.java:188)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at app//net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at app//org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at app//org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at app//runners.page.ConsultaCliente.ingresarDocumento(ConsultaCliente.java:52)
-	at app//runners.steps.ConsultaClienteSteps.ingresarDocumento(ConsultaClienteSteps.java:50)
-	at app//runners.steps.ConsultaClienteSteps$$EnhancerByCGLIB$$276a9a60.CGLIB$ingresarDocumento$4(&lt;generated&gt;)
-	at app//runners.steps.ConsultaClienteSteps$$EnhancerByCGLIB$$276a9a60$$FastClassByCGLIB$$30bec344.invoke(&lt;generated&gt;)
+	at app//page.ConsultaCliente.vistaDatosCliente(ConsultaCliente.java:63)
+	at app//step.ConsultaClienteSteps.verDatosCliente(ConsultaClienteSteps.java:60)
+	at app//step.ConsultaClienteSteps$$EnhancerByCGLIB$$e9b7f3b0.CGLIB$verDatosCliente$10(&lt;generated&gt;)
+	at app//step.ConsultaClienteSteps$$EnhancerByCGLIB$$e9b7f3b0$$FastClassByCGLIB$$66c2f5c6.invoke(&lt;generated&gt;)
 	at app//net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
 	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
@@ -57,75 +37,21 @@ Session ID: 28597ac49f3684e8b37a2b27dd3b4676
 	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
 	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
 	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at app//runners.steps.ConsultaClienteSteps$$EnhancerByCGLIB$$276a9a60.ingresarDocumento(&lt;generated&gt;)
-	at app//stepdefinitions.ConsultaClienteStepDefinitions.se_consulta_un_documento(ConsultaClienteStepDefinitions.java:36)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//cucumber.runtime.Utils$1.call(Utils.java:31)
-	at app//cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at app//cucumber.runtime.Utils.invoke(Utils.java:25)
-	at app//cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at app//cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at app//cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at app//cucumber.api.TestStep.run(TestStep.java:83)
-	at app//cucumber.api.TestCase.run(TestCase.java:58)
-	at app//cucumber.runner.Runner.runPickle(Runner.java:80)
-	at app//cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at app//cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at app//cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	at app//step.ConsultaClienteSteps$$EnhancerByCGLIB$$e9b7f3b0.verDatosCliente(&lt;generated&gt;)
+	at app//stepdefinitions.ConsultaClienteStepDefinitions.se_visualizan_los_datos_del_cliente(ConsultaClienteStepDefinitions.java:41)
+	at ✽.Se visualizan los datos del cliente(src/test/resources/features/consultacliente.feature:11)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[abr. 01, 2022 12:32:07 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[abr. 04, 2022 11:35:39 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 43178
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 11816
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 01, 2022 12:32:11 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 04, 2022 11:35:46 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
@@ -137,7 +63,7 @@ INFO: Detected dialect: W3C
 
 TEST FAILED WITH ERROR: Consultar facturas del cliente
 ---------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Ingresar documento: 1052396787
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - no such element: Unable to locate element: {"method":"css selector","selector":"#mat\-input\-2"}
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Ver datos cliente
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - no such element: Unable to locate element: {"method":"css selector","selector":"#mat\-tab\-label\-0\-2"}
 ]]></system-err>
 </testsuite>

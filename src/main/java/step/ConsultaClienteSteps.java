@@ -1,7 +1,7 @@
-package runners.steps;
+package step;
 
 
-import runners.page.ConsultaCliente;
+import page.ConsultaCliente;
 import net.thucydides.core.annotations.Step;
 
 
