@@ -11,5 +11,6 @@ Feature: Consultar facturas del cliente en el aplicativo Panel Cliente
     Then Se visualizan los datos del cliente
 
     Examples:
-      | Usuario  | Password         | Documento |
-      | 80817985 | Colombi@n@2022+. | 80817985  |
+      | Usuario  | Password         | Documento  |
+      | 80817985 | Colombi@n@2022+. | 1052396787 |
+

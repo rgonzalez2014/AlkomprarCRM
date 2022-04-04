@@ -18,7 +18,6 @@ public class ConsultaClienteSteps {
     @Step
     public void escribirUsuario(String usuario) {
         consultaPOM.ingresarUsuario(usuario);
-
     }
 
     @Step
@@ -29,6 +28,36 @@ public class ConsultaClienteSteps {
     @Step
     public void clicIngresar() {
         consultaPOM.clicIngresar();
+    }
+
+    @Step
+    public void clicPrincipal() {
+        consultaPOM.clicPrincipal();
+    }
+
+    @Step
+    public void clicPrincipalPanelNuevo() {
+        consultaPOM.clicPrincipalPanelCliente();
+    }
+
+    @Step
+    public void ingresarIframe() {
+        consultaPOM.ingresarFrame();
+    }
+
+    @Step
+    public void ingresarDocumento(String documento) {
+        consultaPOM.ingresarDocumento(documento);
+    }
+
+    @Step
+    public void clicBuscar() {
+        consultaPOM.clicBuscar();
+    }
+
+    @Step
+    public void verDatosCliente() {
+        consultaPOM.vistaDatosCliente();
     }
 
     @Step

@@ -2,7 +2,6 @@ package runners.models;
 
 public class DataPanelCliente {
 
-
     String usuario;
     String password;
     String documento;

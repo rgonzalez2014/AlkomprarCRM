@@ -1,0 +1,1 @@
+gradle clean test --tests ConsultaClienteRunner aggregate & cd target/site/serenity & index.html

@@ -20,22 +20,25 @@ public class ConsultaClienteStepDefinitions {
         consultacliente.escribirUsuario(DatosCliente.get(0).getUsuario());
         consultacliente.escribirClave(DatosCliente.get(0).getPassword());
         consultacliente.clicIngresar();
-        consultacliente.cerrarChrome();
-    }
 
+    }
 
     @When("^Se ingresa al modulo de panel cliente$")
     public void se_ingresa_al_modulo_de_panel_cliente() {
-
+        consultacliente.clicPrincipal();
+        consultacliente.clicPrincipalPanelNuevo();
     }
 
     @When("^Se consulta un documento$")
-    public void se_consulta_un_documento() {
-
+    public void se_consulta_un_documento(List<DataPanelCliente> DatosCliente) {
+        consultacliente.ingresarIframe();
+        consultacliente.ingresarDocumento(DatosCliente.get(0).getDocumento());
+        consultacliente.clicBuscar();
     }
 
     @Then("^Se visualizan los datos del cliente$")
     public void se_visualizan_los_datos_del_cliente() {
-
+        consultacliente.verDatosCliente();
+        consultacliente.cerrarChrome();
     }
 }
