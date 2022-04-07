@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b4fbf6-f079-456b-a6d0-fb1741a7dbeb" name="Changes" comment="commit 18032022">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+    <list default="true" id="f1b4fbf6-f079-456b-a6d0-fb1741a7dbeb" name="Changes" comment="commit 04 abril 2022">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Alkomprar.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Alkomprar.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Alkomprar.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Alkomprar.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/runners/models/DataPanelCliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/runners/page/ConsultaCliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/runners/steps/ConsultaClienteSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/stepdefinitions/ConsultaClienteStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/stepdefinitions/ConsultaClienteStepDefinitions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.ConsultaClienteRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.ConsultaClienteRunner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/runners.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/runners.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.xml" afterDir="false" />
@@ -32,13 +26,6 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/runners/models/DataPanelCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DataPanelCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/runners/page/ConsultaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/ConsultaCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/runners/steps/ConsultaClienteSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/step/ConsultaClienteSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ConsultaClienteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ConsultaClienteRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ConsultaClienteStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ConsultaClienteStepDefinitions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +94,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/page/ConsultaCliente.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/ConsultaClienteStepDefinitions.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/runners/ConsultaClienteRunner.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/resources/features/consultacliente.feature" root0="SKIP_INSPECTION" />
@@ -135,7 +123,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27931035" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -145,7 +133,28 @@
       <recent name="PanelCliente.runners" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CRM [clearReports]">
+  <component name="RunManager" selected="Gradle.CRM [clearHistory]">
+    <configuration name="CRM [clearHistory]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clearHistory" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CRM [clearReports]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -213,6 +222,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CRM [clearHistory]" />
         <item itemvalue="Gradle.CRM [clearReports]" />
         <item itemvalue="Gradle.CRM [history]" />
         <item itemvalue="Gradle.ConsultaClienteRunner" />
@@ -240,6 +250,7 @@
       <workItem from="1648834272708" duration="1140000" />
       <workItem from="1649076028059" duration="130000" />
       <workItem from="1649076214676" duration="1016000" />
+      <workItem from="1649168758882" duration="3360000" />
     </task>
     <task id="LOCAL-00001" summary="commit 18032022">
       <created>1647618900279</created>
@@ -269,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647624743298</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit 04 abril 2022">
+      <created>1649090872490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649090872490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,8 +320,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="commit 18032022" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 18032022" />
+    <MESSAGE value="commit 04 abril 2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 04 abril 2022" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
