@@ -4,28 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b4fbf6-f079-456b-a6d0-fb1741a7dbeb" name="Changes" comment="commit 04 abril 2022">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+    <list default="true" id="f1b4fbf6-f079-456b-a6d0-fb1741a7dbeb" name="Changes" comment="commit 07 abril 2022 - consulta de un cliente en panel cliente en crm cartera">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/DataTeleventas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/CrearPedidoStepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/creacionpedidopayu.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.ConsultaClienteRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.ConsultaClienteRunner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/DataPanelCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/page/ConsultaCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/step/ConsultaClienteSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/runners/ConsultaClienteRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/stepdefinitions/ConsultaClienteStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.ConsultaClienteRunner.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/runners.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/runners.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-runners.ConsultaClienteRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-runners.ConsultaClienteRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/features/consultacliente.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Consultar#20facturas#20del#20cliente#20en#20el#20aplicativo#20Panel#20Cliente.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-runners.ConsultaClienteRunner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/DataPanelCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page/ConsultaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/CrearPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/step/ConsultaClienteSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/CrearPedidoSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ConsultaClienteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/CrearPedidoCEPayuRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ConsultaClienteStepDefinitions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/consultacliente.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,12 +108,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/page/ConsultaCliente.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/ConsultaClienteStepDefinitions.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/runners/ConsultaClienteRunner.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/consultacliente.feature" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/serenity.properties" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/serenity.properties" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/models/DataTeleventas.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/page/CrearPedido.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/steps/CrearPedidoSteps.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/runners/CrearPedidoCEPayuRunner.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/CrearPedidoStepDefinitions.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/features/creacionpedidopayu.feature" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -112,19 +128,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.27931035" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1e90d598819071a42140d03e43e328a3&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\80817985\IdeaProjects\Alkomprar" />
@@ -133,7 +142,7 @@
       <recent name="PanelCliente.runners" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CRM [clearHistory]">
+  <component name="RunManager" selected="Gradle.CRM [clearReports]">
     <configuration name="CRM [clearHistory]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,7 +206,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ConsultaClienteRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CrearPedidoCEPayuRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -210,7 +219,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;runners.ConsultaClienteRunner&quot;" />
+            <option value="&quot;runners.CrearPedidoCEPayuRunner&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,10 +231,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CRM [clearHistory]" />
         <item itemvalue="Gradle.CRM [clearReports]" />
+        <item itemvalue="Gradle.CRM [clearHistory]" />
+        <item itemvalue="Gradle.CrearPedidoCEPayuRunner" />
         <item itemvalue="Gradle.CRM [history]" />
-        <item itemvalue="Gradle.ConsultaClienteRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +260,14 @@
       <workItem from="1649076028059" duration="130000" />
       <workItem from="1649076214676" duration="1016000" />
       <workItem from="1649168758882" duration="3360000" />
+      <workItem from="1649342141863" duration="3076000" />
+      <workItem from="1649424589348" duration="4492000" />
+      <workItem from="1650284570536" duration="620000" />
+      <workItem from="1650285619770" duration="1217000" />
+      <workItem from="1650996508927" duration="1414000" />
+      <workItem from="1651182356273" duration="1674000" />
+      <workItem from="1651235710225" duration="7364000" />
+      <workItem from="1651759697227" duration="14706000" />
     </task>
     <task id="LOCAL-00001" summary="commit 18032022">
       <created>1647618900279</created>
@@ -287,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649090872490</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit 07 abril 2022 - consulta de un cliente en panel cliente en crm cartera">
+      <created>1649342436914</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649342436914</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,10 +349,14 @@
     </ignored-roots>
     <MESSAGE value="commit 18032022" />
     <MESSAGE value="commit 04 abril 2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 04 abril 2022" />
+    <MESSAGE value="commit 07 abril 2022 - consulta de un cliente en panel cliente en crm cartera" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 07 abril 2022 - consulta de un cliente en panel cliente en crm cartera" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Alkomprar$CrearPedidoCEPayuRunner.ic" NAME="CrearPedidoCEPayuRunner Coverage Results" MODIFIED="1651784858445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
