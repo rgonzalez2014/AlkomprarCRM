@@ -1,34 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Crear un pedido cliente envio con medio de pago PayU" tests="1" skipped="1" failures="0" errors="0" timestamp="2022-05-05T21:15:19" hostname="DIBOG-AGROGER" time="61.002">
+<testsuite name="Crear un pedido cliente envio con medio de pago PayU" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-07T16:49:33" hostname="DIBOG-AGROGER" time="25.132">
   <properties/>
-  <testcase name="Creacion pedido cliente envio on medio de pago PayU" classname="Crear un pedido cliente envio con medio de pago PayU" time="61.002">
-    <skipped/>
+  <testcase name="Creacion pedido cliente envio con medio de pago PayU" classname="Crear un pedido cliente envio con medio de pago PayU" time="25.132">
+    <failure message="java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:93)
+	at page.CrearPedido.segundoApellido(CrearPedido.java:113)
+	at steps.CrearPedidoSteps.ingresarSegundoApellido(CrearPedidoSteps.java:95)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.CGLIB$ingresarSegundoApellido$17(&lt;generated&gt;)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a$$FastClassByCGLIB$$34c0241e.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.ingresarSegundoApellido(&lt;generated&gt;)
+	at stepdefinitions.CrearPedidoStepDefinitions.se_hace_clic_en_el_boton_Crear_y_registran_los_datos_del_formulario_cliente_factura(CrearPedidoStepDefinitions.java:44)
+	at ✽.Se hace clic en el boton Crear y registran los datos del formulario cliente factura(src/test/resources/features/creacionpedidopayuce.feature:8)
+</failure>
+    <failure message="cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se registran los datos del formulario cliente envio&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se registran los datos del formulario cliente envio&quot; is undefined
+</failure>
+    <failure message="cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se agregan productos al pedido&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se agregan productos al pedido&quot; is undefined
+</failure>
+    <failure message="cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se registran los datos del medio de pago&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se registran los datos del medio de pago&quot; is undefined
+</failure>
+    <failure message="cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se crea el pedido quedando en estado confirmacion pago&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se crea el pedido quedando en estado confirmacion pago&quot; is undefined
+</failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may. 05, 2022 4:15:19 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[jun. 07, 2022 11:49:34 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 26629
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 31502
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1651785324.031][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
-may. 05, 2022 4:15:25 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1654620576.797][WARNING]: This version of ChromeDriver has not been tested with Chrome version 102.
+jun. 07, 2022 11:49:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1651785349.220][SEVERE]: Timed out receiving message from renderer: 10.000
-[1651785349.220][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1651785359.221][SEVERE]: Timed out receiving message from renderer: 10.000
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PENDING: Creacion pedido cliente envio on medio de pago PayU
----------------------------------------------------------------------------------
+TEST FAILED WITH ERROR: Creacion pedido cliente envio con medio de pago PayU
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Ingresar segundo apellido: Gonzalez
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Keys to send should be a not null CharSequence
 ]]></system-err>
 </testsuite>

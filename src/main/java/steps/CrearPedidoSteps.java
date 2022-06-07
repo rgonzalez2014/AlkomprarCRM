@@ -45,13 +45,101 @@ public class CrearPedidoSteps {
         creacionPOM.ingresarFrame();
     }
 
-    public void clicCrear(){
+    @Step
+    public void clicCrear() {
         creacionPOM.clicCrear();
     }
 
-    public void registarClienteFactura(String unidadventa){
-        creacionPOM.registrarClienteFactura(unidadventa);
+    @Step
+    public void selectUnidadVenta(String unidadventa) {
+        creacionPOM.unidadVenta(unidadventa);
     }
+
+    @Step
+    public void selectFacturacionAutomatica(String facturacionelectronica) {
+        creacionPOM.factElec(facturacionelectronica);
+    }
+
+    @Step
+    public void selectTipoDocumento(String tipodocumento) {
+        creacionPOM.tipoDocumento(tipodocumento);
+    }
+
+    @Step
+    public void ingresarDocumento(String numerodocumento) {
+        creacionPOM.numeroDocumento(numerodocumento);
+    }
+
+    @Step
+    public void buscarDocumento() {
+        creacionPOM.btnBuscar();
+    }
+
+    @Step
+    public void ingresarPrimerNombre(String primernombre) {
+        creacionPOM.primerNombre(primernombre);
+    }
+
+    @Step
+    public void ingresarSegundoNombre(String segundonombre) {
+        creacionPOM.segundoNombre(segundonombre);
+    }
+
+    @Step
+    public void ingresarPrimerApellido(String primerapellido) {
+        creacionPOM.primerApellido(primerapellido);
+    }
+
+    @Step
+    public void ingresarSegundoApellido(String segundoapellido) {
+        creacionPOM.segundoApellido(segundoapellido);
+    }
+
+    @Step
+    public void selectCiudad(String ciudad) {
+        creacionPOM.ciudad(ciudad);
+    }
+
+    @Step
+    public void ingresarDireccion(String direccion) {
+        creacionPOM.direccion(direccion);
+    }
+
+    @Step
+    public void clicGeorreferenciar() {
+        creacionPOM.georreferenciar();
+    }
+
+    @Step
+    public void ingresarNumeroCelular(String telefonocelular) {
+        creacionPOM.celular(telefonocelular);
+    }
+
+    @Step
+    public void ingresarTelefonoFijo(String telefonofijo) {
+        creacionPOM.telefonoFijo(telefonofijo);
+    }
+
+    @Step
+    public void ingresarEmail(String email) {
+        creacionPOM.email(email);
+    }
+
+    @Step
+    public void selectGenero(String genero) {
+        creacionPOM.genero(genero);
+    }
+
+    @Step
+    public void selectTratamientoDatos(String autorizotratamientodatos) {
+        creacionPOM.tratamientoDatos(autorizotratamientodatos);
+    }
+
+    @Step
+    public void clicSiguienteFC() {
+        creacionPOM.siguienteCF();
+    }
+
     @Step
     public void cerrarChrome() {
         creacionPOM.salirChrome();

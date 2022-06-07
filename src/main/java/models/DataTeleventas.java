@@ -14,7 +14,6 @@ public class DataTeleventas {
     String segundoapellido;
     String ciudad;
     String direccion;
-    String barrio;
     String telefonocelular;
     String telefonofijo;
     String email;
@@ -37,7 +36,7 @@ public class DataTeleventas {
     String ean;
     String observaciones;
 
-    public DataTeleventas(String usuario, String password, String unidadventa, String facturacionelectronica, String tipodocumento, String numerodocumento, String primernombre, String segundonombre, String primerapellido, String segundoapellido, String ciudad, String direccion, String barrio, String telefonocelular, String telefonofijo, String email, String genero, String autorizotratamientodatos, String tipodocumento_ce, String numerodocumento_ce, String primernombre_ce, String segundonombre_ce, String primerapellido_ce, String segundoapellido_ce, String ciudad_ce, String direccion_ce, String departamento_ce, String barrio_ce, String telefonocelular_ce, String telefonofijo_ce, String email_ce, String genero_ce, String ean, String observaciones) {
+    public DataTeleventas(String usuario, String password, String unidadventa, String facturacionelectronica, String tipodocumento, String numerodocumento, String primernombre, String segundonombre, String primerapellido, String segundoapellido, String ciudad, String direccion, String telefonocelular, String telefonofijo, String email, String genero, String autorizotratamientodatos, String tipodocumento_ce, String numerodocumento_ce, String primernombre_ce, String segundonombre_ce, String primerapellido_ce, String segundoapellido_ce, String ciudad_ce, String direccion_ce, String departamento_ce, String barrio_ce, String telefonocelular_ce, String telefonofijo_ce, String email_ce, String genero_ce, String ean, String observaciones) {
         this.usuario = usuario;
         this.password = password;
         this.unidadventa = unidadventa;
@@ -50,7 +49,6 @@ public class DataTeleventas {
         this.segundoapellido = segundoapellido;
         this.ciudad = ciudad;
         this.direccion = direccion;
-        this.barrio = barrio;
         this.telefonocelular = telefonocelular;
         this.telefonofijo = telefonofijo;
         this.email = email;
@@ -120,10 +118,6 @@ public class DataTeleventas {
 
     public String getDireccion() {
         return direccion;
-    }
-
-    public String getBarrio() {
-        return barrio;
     }
 
     public String getTelefonocelular() {

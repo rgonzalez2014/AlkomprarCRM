@@ -6,7 +6,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = {"src/test/resources/features/creacionpedidopayu.feature"},
+@CucumberOptions(features = {"src/test/resources/features/creacionpedidopayuce.feature"},
         glue = {"stepdefinitions"},
         snippets = SnippetType.CAMELCASE)
 

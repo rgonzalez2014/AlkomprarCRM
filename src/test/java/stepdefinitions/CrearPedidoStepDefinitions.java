@@ -33,7 +33,26 @@ public class CrearPedidoStepDefinitions {
     public void se_hace_clic_en_el_boton_Crear_y_registran_los_datos_del_formulario_cliente_factura(List<DataTeleventas> listadatos) {
         pedido.ingresarIframe();
         pedido.clicCrear();
-        pedido.registarClienteFactura(listadatos.get(0).getUnidadventa());
+        pedido.selectUnidadVenta(listadatos.get(0).getUnidadventa());
+        pedido.selectFacturacionAutomatica(listadatos.get(0).getFacturacionelectronica());
+        pedido.selectTipoDocumento(listadatos.get(0).getTipodocumento());
+        pedido.ingresarDocumento(listadatos.get(0).getNumerodocumento());
+        pedido.buscarDocumento();
+        pedido.ingresarPrimerNombre(listadatos.get(0).getPrimernombre());
+        pedido.ingresarSegundoNombre(listadatos.get(0).getSegundonombre());
+        pedido.ingresarPrimerApellido(listadatos.get(0).getPrimerapellido());
+        pedido.ingresarSegundoApellido(listadatos.get(0).getSegundoapellido());
+        pedido.selectCiudad(listadatos.get(0).getCiudad());
+        pedido.ingresarDireccion(listadatos.get(0).getDireccion());
+        pedido.clicGeorreferenciar();
+        pedido.ingresarNumeroCelular(listadatos.get(0).getTelefonocelular());
+        pedido.ingresarTelefonoFijo(listadatos.get(0).getTelefonofijo());
+        pedido.ingresarEmail(listadatos.get(0).getEmail());
+        pedido.selectGenero(listadatos.get(0).getGenero());
+        pedido.selectTratamientoDatos(listadatos.get(0).getAutorizotratamientodatos());
+        //pedido.clicSiguienteFC();
+
+        pedido.cerrarChrome();
     }
 /*
     @Then("^Se registran los datos del formulario cliente envio$")

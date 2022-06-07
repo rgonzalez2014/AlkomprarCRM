@@ -1,0 +1,1 @@
+gradle clean test --tests CrearPedidoCEPayuRunner aggregate & cd target/site/serenity & index.html
