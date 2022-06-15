@@ -111,7 +111,7 @@ public class CrearPedidoSteps {
     }
 
     @Step
-    public void ingresarNumeroCelular(String telefonocelular) {
+    public void ingresarNumeroCelular(String telefonocelular) throws InterruptedException {
         creacionPOM.celular(telefonocelular);
     }
 
@@ -136,8 +136,87 @@ public class CrearPedidoSteps {
     }
 
     @Step
-    public void clicSiguienteFC() {
-        creacionPOM.siguienteCF();
+    public void clicSiguienteCF() {
+        creacionPOM.siguientecf();
+    }
+
+    public void formularioClienteEnvio(){
+        creacionPOM.verFormularioClienteEnvio();
+    }
+
+    @Step
+    public void selectTipoDocumentoCE(String tipodocumento) {
+        creacionPOM.tipoDocumento(tipodocumento);
+    }
+
+    @Step
+    public void ingresarDocumentoCE(String numerodocumento) {
+        creacionPOM.numeroDocumento(numerodocumento);
+    }
+
+    @Step
+    public void buscarDocumentoCE() {
+        creacionPOM.btnBuscar();
+    }
+
+    @Step
+    public void ingresarPrimerNombreCE(String primernombre) {
+        creacionPOM.primerNombre(primernombre);
+    }
+
+    @Step
+    public void ingresarSegundoNombreCE(String segundonombre) {
+        creacionPOM.segundoNombre(segundonombre);
+    }
+
+    @Step
+    public void ingresarPrimerApellidoCE(String primerapellido) {
+        creacionPOM.primerApellido(primerapellido);
+    }
+
+    @Step
+    public void ingresarSegundoApellidoCE(String segundoapellido) {
+        creacionPOM.segundoApellido(segundoapellido);
+    }
+
+    @Step
+    public void selectCiudadCE(String ciudad) {
+        creacionPOM.ciudad(ciudad);
+    }
+
+    @Step
+    public void ingresarDireccionCE(String direccion) {
+        creacionPOM.direccion(direccion);
+    }
+
+    @Step
+    public void clicGeorreferenciarCE() {
+        creacionPOM.georreferenciar();
+    }
+
+    @Step
+    public void ingresarNumeroCelularCE(String telefonocelular) throws InterruptedException {
+        creacionPOM.celular(telefonocelular);
+    }
+
+    @Step
+    public void ingresarTelefonoFijoCE(String telefonofijo) {
+        creacionPOM.telefonoFijo(telefonofijo);
+    }
+
+    @Step
+    public void ingresarEmailCE(String email) {
+        creacionPOM.email(email);
+    }
+
+    @Step
+    public void selectGeneroCE(String genero) {
+        creacionPOM.genero(genero);
+    }
+
+    @Step
+    public void clicSiguienteCE() {
+        creacionPOM.siguientece();
     }
 
     @Step

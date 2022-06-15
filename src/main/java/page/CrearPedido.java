@@ -5,6 +5,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -12,12 +13,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CrearPedido extends PageObject {
 
+    /*Login*/
     By textusuario = By.name("usuario");
     By textpassword = By.name("password");
     By btningresar = By.id("ingresa");
+
+    /*Ruta Modulo Televentas*/
     By btnprincipal = By.xpath("//*[@id='marco']/ul/li[2]/a/span");
     By btnteleventas = By.xpath("//*[contains(text(),'Televentas')]");
     By btncrear = By.xpath("/html/body/div[1]/div[2]/a");
+
+    /*Formulario Cliente Factura*/
     By listunidadventa = By.name("unidad_venta");
     By listfacturacionaut = By.name("facturacion_electronica");
     By listtipodoc = By.name("cliente[cod_tipo_identificacion]");
@@ -32,7 +38,6 @@ public class CrearPedido extends PageObject {
     By selectciudad = By.id("ciudad");
     By txtdireccion = By.name("cliente[direccion]");
     By btngeorreferenciar = By.id("georeferenciar");
-    By txtbarrio = By.name("cliente[barrio]");
     By txtcelular = By.name("cliente[telefono_celular]");
     By txtfijo = By.name("cliente[telefono_fijo]");
     By txtemail = By.name("cliente[email]");
@@ -40,6 +45,28 @@ public class CrearPedido extends PageObject {
     By selecthabeasdata = By.name("cliente[sms_habeas]");
     By btnsiguiente = By.id("siguiente");
 
+    /*Formulario Cliente Envio*/
+
+    By formularioclienteenvio = By.xpath("//*[contains(text(),'Tipo Cliente')]");
+    By selecttipocliente = By.id("tipo-cliente");
+    By listtipodocce = By.name("cliente[cod_tipo_identificacion");
+    By textnumdocce = By.name("cliente[numero_documento]");
+    By btnbuscarce = By.id("buscar-cliente");
+    By poupclientenoexistece = By.xpath("//*[contains(text(),'El cliente no existe')]");
+    By txtprimernombrece = By.id("primer-nombre");
+    By txtsegundonombrece = By.name("cliente[segundo_nombre]");
+    By txtprimerapellidoce = By.name("cliente[primer_apellido]");
+    By txtsegundoapellidoce = By.name("cliente[segundo_apellido]");
+    By selectciudadce = By.id("ciudad");
+    By txtdireccionce = By.name("cliente[direccion]");
+    By btngeorreferenciarce = By.id("georeferenciar");
+    By txtcelularce = By.name("cliente[telefono_celular]");
+    By txtfijoce = By.name(" cliente[telefono_fijo]");
+    By txtemailce = By.name(" cliente[email]");
+    By selectgeneroce = By.id("genero");
+    By btnsiguientece = By.id("siguiente");
+
+    /*Login*/
     public void ingresarUsuario(String usuario) {
         getDriver().findElement(textusuario).sendKeys(usuario);
     }
@@ -52,6 +79,7 @@ public class CrearPedido extends PageObject {
         getDriver().findElement(btningresar).click();
     }
 
+    /*Ruta Modulo Televentas*/
     public void clicPrincipal() {
         getDriver().findElement(btnprincipal).click();
     }
@@ -69,8 +97,10 @@ public class CrearPedido extends PageObject {
         getDriver().findElement(btncrear).click();
     }
 
+    /*Formulario Cliente Factura*/
     public void unidadVenta(String unidadventa) {
-        getDriver().findElement(listunidadventa).sendKeys(unidadventa);
+        Select unidad = new Select(getDriver().findElement(listunidadventa));
+        unidad.selectByVisibleText(unidadventa);
     }
 
     public void factElec(String facturacionelectronica) {
@@ -78,7 +108,8 @@ public class CrearPedido extends PageObject {
     }
 
     public void tipoDocumento(String tipodocumento) {
-        getDriver().findElement(listtipodoc).sendKeys(tipodocumento);
+        Select identificacion = new Select(getDriver().findElement(listtipodoc));
+        identificacion.selectByVisibleText(tipodocumento);
     }
 
     public void numeroDocumento(String numerodocumento) {
@@ -114,7 +145,8 @@ public class CrearPedido extends PageObject {
     }
 
     public void ciudad(String ciudad) {
-        getDriver().findElement(selectciudad).sendKeys(ciudad);
+        Select Ciudad = new Select(getDriver().findElement(selectciudad));
+        Ciudad.selectByVisibleText(ciudad);
     }
 
     public void direccion(String direccion) {
@@ -126,7 +158,8 @@ public class CrearPedido extends PageObject {
         getDriver().findElement(btngeorreferenciar).click();
     }
 
-    public void celular(String telefonocelular) {
+    public void celular(String telefonocelular) throws InterruptedException {
+        Thread.sleep(3000);
         getDriver().findElement(txtcelular).clear();
         getDriver().findElement(txtcelular).sendKeys(telefonocelular);
     }
@@ -142,15 +175,98 @@ public class CrearPedido extends PageObject {
     }
 
     public void genero(String genero) {
-        getDriver().findElement(selectgenero).sendKeys(genero);
+        Select Genero = new Select(getDriver().findElement(selectgenero));
+        Genero.selectByVisibleText(genero);
     }
 
     public void tratamientoDatos(String autorizotratamientodatos) {
         getDriver().findElement(selecthabeasdata).sendKeys(autorizotratamientodatos);
     }
 
-    public void siguienteCF(){
+    public void siguientecf() {
         getDriver().findElement(btnsiguiente).click();
+    }
+
+    /*Formulario Cliente Envio*/
+
+    public void verFormularioClienteEnvio() {
+        WebDriverWait wait = new WebDriverWait(getDriver(),30);
+        wait.until(ExpectedConditions.presenceOfElementLocated(formularioclienteenvio));
+    }
+    public void tipoDocumento_ce(String tipodocumento_ce) {
+        Select identificacion = new Select(getDriver().findElement(listtipodocce));
+        identificacion.selectByVisibleText(tipodocumento_ce);
+    }
+
+    public void numeroDocumento_ce(String numerodocumento_ce) {
+        getDriver().findElement(textnumdocce).sendKeys(numerodocumento_ce);
+    }
+
+    public void btnBuscar_ce() {
+        getDriver().findElement(btnbuscarce).click();
+        if (isElementVisible(poupclientenoexiste)) {
+            getDriver().findElement(btnaceptar).click();
+        } else {
+            getDriver().findElement(txtprimernombrece).clear();
+        }
+    }
+
+    public void primerNombre_ce(String primernombre_ce) {
+        getDriver().findElement(txtprimernombrece).sendKeys(primernombre_ce);
+    }
+
+    public void segundoNombre_ce(String segundonombre_ce) {
+        getDriver().findElement(txtsegundonombrece).clear();
+        getDriver().findElement(txtsegundonombrece).sendKeys(segundonombre_ce);
+    }
+
+    public void primerApellido_ce(String primerapellido_ce) {
+        getDriver().findElement(txtprimerapellidoce).clear();
+        getDriver().findElement(txtprimerapellidoce).sendKeys(primerapellido_ce);
+    }
+
+    public void segundoApellido_ce(String segundoapellido_ce) {
+        getDriver().findElement(txtsegundoapellidoce).clear();
+        getDriver().findElement(txtsegundoapellidoce).sendKeys(segundoapellido_ce);
+    }
+
+    public void ciudad_ce(String ciudad_ce) {
+        Select Ciudad = new Select(getDriver().findElement(selectciudadce));
+        Ciudad.selectByVisibleText(ciudad_ce);
+    }
+
+    public void direccion_ce(String direccion_ce) {
+        getDriver().findElement(txtdireccionce).clear();
+        getDriver().findElement(txtdireccionce).sendKeys(direccion_ce);
+    }
+
+    public void georreferenciar_ce() {
+        getDriver().findElement(btngeorreferenciarce).click();
+    }
+
+    public void celular_ce(String telefonocelular_ce) throws InterruptedException {
+        Thread.sleep(3000);
+        getDriver().findElement(txtcelularce).clear();
+        getDriver().findElement(txtcelularce).sendKeys(telefonocelular_ce);
+    }
+
+    public void telefonoFijo_ce(String telefonofijo_ce) {
+        getDriver().findElement(txtfijoce).clear();
+        getDriver().findElement(txtfijoce).sendKeys(telefonofijo_ce);
+    }
+
+    public void email_ce(String email_ce) {
+        getDriver().findElement(txtemailce).clear();
+        getDriver().findElement(txtemailce).sendKeys(email_ce);
+    }
+
+    public void genero_ce(String genero_ce) {
+        Select Genero = new Select(getDriver().findElement(selectgeneroce));
+        Genero.selectByVisibleText(genero_ce);
+    }
+
+    public void siguientece() {
+        getDriver().findElement(btnsiguientece).click();
     }
 
     public void salirChrome() {

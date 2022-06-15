@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">25.132s</div>
+<div class="counter">1m16.79s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,38 +76,57 @@
 <a name="Creacion pedido cliente envio con medio de pago PayU"></a>
 <h3 class="failures">Creacion pedido cliente envio con medio de pago PayU</h3>
 <span class="code">
-<pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:93)
-	at page.CrearPedido.segundoApellido(CrearPedido.java:113)
-	at steps.CrearPedidoSteps.ingresarSegundoApellido(CrearPedidoSteps.java:95)
-	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.CGLIB$ingresarSegundoApellido$17(&lt;generated&gt;)
-	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a$$FastClassByCGLIB$$34c0241e.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.ingresarSegundoApellido(&lt;generated&gt;)
-	at stepdefinitions.CrearPedidoStepDefinitions.se_hace_clic_en_el_boton_Crear_y_registran_los_datos_del_formulario_cliente_factura(CrearPedidoStepDefinitions.java:44)
-	at ✽.Se hace clic en el boton Crear y registran los datos del formulario cliente factura(src/test/resources/features/creacionpedidopayuce.feature:8)
-</pre>
-</span>
-<span class="code">
-<pre>cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se registran los datos del formulario cliente envio&quot; is undefined
-</pre>
-</span>
-<span class="code">
-<pre>cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se agregan productos al pedido&quot; is undefined
-</pre>
-</span>
-<span class="code">
-<pre>cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se registran los datos del medio de pago&quot; is undefined
-</pre>
-</span>
-<span class="code">
-<pre>cucumber.runtime.junit.UndefinedThrowable: The step &quot;Se crea el pedido quedando en estado confirmacion pago&quot; is undefined
+<pre>cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'stepdefinitions.CrearPedidoStepDefinitions.se_agregan_productos_al_pedido() in file:/C:/Users/80817985/IdeaProjects/CRM/build/classes/java/test/' with pattern [^Se agregan productos al pedido$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[ean], [723755138421]]]. 
+Step text: Se agregan productos al pedido
+	at app//cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:111)
+	at app//cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:66)
+	at app//cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at app//cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at app//cucumber.api.TestStep.run(TestStep.java:83)
+	at app//cucumber.api.TestCase.run(TestCase.java:58)
+	at app//cucumber.runner.Runner.runPickle(Runner.java:80)
+	at app//cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at app//cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </pre>
 </span>
 </div>
@@ -124,7 +143,7 @@
 </thead>
 <tr>
 <td class="failures">Creacion pedido cliente envio con medio de pago PayU</td>
-<td class="failures">25.132s</td>
+<td class="failures">1m16.79s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -132,18 +151,17 @@
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>jun. 07, 2022 11:49:34 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>jun. 15, 2022 5:41:10 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 31502
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 39018
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1654620576.797][WARNING]: This version of ChromeDriver has not been tested with Chrome version 102.
-jun. 07, 2022 11:49:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1655332874.007][WARNING]: This version of ChromeDriver has not been tested with Chrome version 102.
+jun. 15, 2022 5:41:14 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -154,8 +172,8 @@ INFO: Detected dialect: W3C
 
 TEST FAILED WITH ERROR: Creacion pedido cliente envio con medio de pago PayU
 ---------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Ingresar segundo apellido: Gonzalez
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Keys to send should be a not null CharSequence
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP And Se agregan productos al pedido | ean | | 723755138421 |
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Arity mismatch: Step Definition 'stepdefinitions.CrearPedidoStepDefinitions.se_agregan_productos_al_pedido() in file:/C:/Users/80817985/IdeaProjects/CRM/build/classes/java/test/' with pattern [^Se agregan productos al pedido$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[ean], [723755138421]]]. 
 </pre>
 </span>
 </div>
@@ -167,7 +185,7 @@ TEST FAILED WITH ERROR: Creacion pedido cliente envio con medio de pago PayU
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at 7/06/2022, 11:50:03 a. m.</p>
+<a href="http://www.gradle.org">Gradle 7.3</a> at 15/06/2022, 5:42:41 p. m.</p>
 </div>
 </div>
 </body>

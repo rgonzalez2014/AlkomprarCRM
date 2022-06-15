@@ -30,7 +30,7 @@ public class CrearPedidoStepDefinitions {
     }
 
     @Then("^Se hace clic en el boton Crear y registran los datos del formulario cliente factura$")
-    public void se_hace_clic_en_el_boton_Crear_y_registran_los_datos_del_formulario_cliente_factura(List<DataTeleventas> listadatos) {
+    public void se_hace_clic_en_el_boton_Crear_y_registran_los_datos_del_formulario_cliente_factura(List<DataTeleventas> listadatos) throws InterruptedException {
         pedido.ingresarIframe();
         pedido.clicCrear();
         pedido.selectUnidadVenta(listadatos.get(0).getUnidadventa());
@@ -50,14 +50,29 @@ public class CrearPedidoStepDefinitions {
         pedido.ingresarEmail(listadatos.get(0).getEmail());
         pedido.selectGenero(listadatos.get(0).getGenero());
         pedido.selectTratamientoDatos(listadatos.get(0).getAutorizotratamientodatos());
-        //pedido.clicSiguienteFC();
+        pedido.clicSiguienteCF();
 
-        pedido.cerrarChrome();
+
     }
-/*
-    @Then("^Se registran los datos del formulario cliente envio$")
-    public void se_registran_los_datos_del_formulario_cliente_envio() {
 
+    @Then("^Se registran los datos del formulario cliente envio$")
+    public void se_registran_los_datos_del_formulario_cliente_envio(List<DataTeleventas> listadatos) throws InterruptedException {
+        pedido.formularioClienteEnvio();
+        pedido.selectTipoDocumentoCE(listadatos.get(0).getTipodocumento_ce());
+        pedido.ingresarDocumentoCE(listadatos.get(0).getNumerodocumento_ce());
+        pedido.buscarDocumentoCE();
+        pedido.ingresarPrimerNombreCE(listadatos.get(0).getPrimernombre_ce());
+        pedido.ingresarSegundoNombreCE(listadatos.get(0).getSegundonombre_ce());
+        pedido.ingresarPrimerApellidoCE(listadatos.get(0).getPrimerapellido_ce());
+        pedido.ingresarSegundoApellidoCE(listadatos.get(0).getSegundoapellido_ce());
+        pedido.selectCiudadCE(listadatos.get(0).getCiudad_ce());
+        pedido.ingresarDireccionCE(listadatos.get(0).getDireccion_ce());
+        pedido.ingresarNumeroCelularCE(listadatos.get(0).getTelefonocelular_ce());
+        pedido.ingresarTelefonoFijoCE(listadatos.get(0).getTelefonofijo_ce());
+        pedido.ingresarEmailCE(listadatos.get(0).getEmail_ce());
+        pedido.selectGeneroCE(listadatos.get(0).getGenero_ce());
+        pedido.clicSiguienteCE();
+        pedido.cerrarChrome();
     }
 
     @Then("^Se agregan productos al pedido$")
@@ -76,6 +91,4 @@ public class CrearPedidoStepDefinitions {
     }
 
 
-
- */
 }
