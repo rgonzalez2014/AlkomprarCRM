@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 
 @DefaultUrl("http://10.181.3.183:8085/cmpqr_cartera/index.php")
 
@@ -30,34 +32,34 @@ public class CrearPedido extends PageObject {
     By textnumdoc = By.name("cliente[numero_documento]");
     By btnbuscar = By.id("buscar-cliente");
     By poupclientenoexiste = By.xpath("//*[contains(text(),'El cliente no existe')]");
-    By btnaceptar = By.xpath("//*[contains(text(),'El cliente no existe')]");
+    By btnaceptar = By.xpath("/html/body/div[5]/div/div[4]/div/button");
     By txtprimernombre = By.name("cliente[primer_nombre]");
     By txtsegundonombre = By.name("cliente[segundo_nombre]");
     By txtprimerapellido = By.name("cliente[primer_apellido]");
     By txtsegundoapellido = By.name("cliente[segundo_apellido]");
-    By selectciudad = By.id("ciudad");
+    By listciudad = By.id("ciudad");
     By txtdireccion = By.name("cliente[direccion]");
     By btngeorreferenciar = By.id("georeferenciar");
     By txtcelular = By.name("cliente[telefono_celular]");
     By txtfijo = By.name("cliente[telefono_fijo]");
     By txtemail = By.name("cliente[email]");
-    By selectgenero = By.id("genero");
-    By selecthabeasdata = By.name("cliente[sms_habeas]");
+    By listgenero = By.id("genero");
+    By listhabeasdata = By.name("cliente[sms_habeas]");
     By btnsiguiente = By.id("siguiente");
 
     /*Formulario Cliente Envio*/
 
     By formularioclienteenvio = By.xpath("//*[contains(text(),'Tipo Cliente')]");
-    By selecttipocliente = By.id("tipo-cliente");
     By listtipodocce = By.name("cliente[cod_tipo_identificacion");
     By textnumdocce = By.name("cliente[numero_documento]");
     By btnbuscarce = By.id("buscar-cliente");
     By poupclientenoexistece = By.xpath("//*[contains(text(),'El cliente no existe')]");
+    By btnaceptarce = By.xpath("/html/body/div[4]/div/div[4]/div/button");
     By txtprimernombrece = By.id("primer-nombre");
     By txtsegundonombrece = By.name("cliente[segundo_nombre]");
     By txtprimerapellidoce = By.name("cliente[primer_apellido]");
     By txtsegundoapellidoce = By.name("cliente[segundo_apellido]");
-    By selectciudadce = By.id("ciudad");
+    By listciudadce = By.id("ciudad");
     By txtdireccionce = By.name("cliente[direccion]");
     By btngeorreferenciarce = By.id("georeferenciar");
     By txtcelularce = By.name("cliente[telefono_celular]");
@@ -65,6 +67,39 @@ public class CrearPedido extends PageObject {
     By txtemailce = By.name(" cliente[email]");
     By selectgeneroce = By.id("genero");
     By btnsiguientece = By.id("siguiente");
+
+    /*Formulario Cliente Recoge*/
+
+    By listrecogeen = By.name("unidad_recoge");
+
+    /*Formulario Productos*/
+
+    By formularioproductos = By.xpath("//*[contains(text(),'Pedido N°')]");
+    By txtean = By.name("ean");
+    By btnbuscarean = By.id("buscar-ean");
+    By popupeansincobertura = By.xpath("//*[contains(text(),'Actualmente no se cuenta con cobertura de este producto para la ciudad seleccionada')]");
+    By popupsinprecio = By.xpath("//*[contains(text(),'el servicio de precios no responde')]");
+    By popupsininventario = By.xpath("//*[contains(text(),'No se encontró inventario del producto')]");
+    By txtcantidad = By.xpath("//*[@id='tabla-unidades']/tbody/tr/td[3]/input");
+    By btncarro = By.xpath("//*[@id='tabla-unidades']/tbody/tr/td[5]/button/span");
+    By popupproductoagregado = By.xpath("//*[contains(text(),'Producto agregado')]");
+    By btnaceptarcarro = By.xpath("/html/body/div[2]/div/div[4]/div/button");
+    By btnsiguienteprod = By.id("confirmacion-productos");
+    By btnaceptarproducto = By.xpath("/html/body/div[2]/div/div[4]/div/button");
+    By pupupproductosagregados = By.xpath("//*[contains(text(),'Los productos han sido agregados al pedido')]");
+
+    /*Formulario Medios Pago*/
+    By selectfecha = By.name("fecha_entrega");
+    By listcalendario = By.xpath("//*[@id='ui-datepicker-div']/table//tbody//td[@data-event='click']");
+    By btnsiguientemes = By.xpath("//*[@id='ui-datepicker-div']/div/a[2]/span");
+    By formulariomediospago = By.xpath("//*[contains(text(),'Fechas de entrega')]");
+    By btnguardarfecha = By.xpath("//*[@id='form-fechas']/div[4]/button");
+    By popupfechaguardada = By.xpath("//*[contains(text(),'Información guardada correctamente')]");
+    By listmetodopago = By.name("cod_metodo_pago");
+    By listtipopago = By.id("tipo-pago");
+    By listlink = By.id("metodo-link-pago");
+    By txtobservaciones = By.name("observaciones");
+    By btnsiguientemp = By.id("siguiente");
 
     /*Login*/
     public void ingresarUsuario(String usuario) {
@@ -145,7 +180,7 @@ public class CrearPedido extends PageObject {
     }
 
     public void ciudad(String ciudad) {
-        Select Ciudad = new Select(getDriver().findElement(selectciudad));
+        Select Ciudad = new Select(getDriver().findElement(listciudad));
         Ciudad.selectByVisibleText(ciudad);
     }
 
@@ -175,12 +210,12 @@ public class CrearPedido extends PageObject {
     }
 
     public void genero(String genero) {
-        Select Genero = new Select(getDriver().findElement(selectgenero));
+        Select Genero = new Select(getDriver().findElement(listgenero));
         Genero.selectByVisibleText(genero);
     }
 
     public void tratamientoDatos(String autorizotratamientodatos) {
-        getDriver().findElement(selecthabeasdata).sendKeys(autorizotratamientodatos);
+        getDriver().findElement(listhabeasdata).sendKeys(autorizotratamientodatos);
     }
 
     public void siguientecf() {
@@ -190,9 +225,10 @@ public class CrearPedido extends PageObject {
     /*Formulario Cliente Envio*/
 
     public void verFormularioClienteEnvio() {
-        WebDriverWait wait = new WebDriverWait(getDriver(),30);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(formularioclienteenvio));
     }
+
     public void tipoDocumento_ce(String tipodocumento_ce) {
         Select identificacion = new Select(getDriver().findElement(listtipodocce));
         identificacion.selectByVisibleText(tipodocumento_ce);
@@ -204,8 +240,8 @@ public class CrearPedido extends PageObject {
 
     public void btnBuscar_ce() {
         getDriver().findElement(btnbuscarce).click();
-        if (isElementVisible(poupclientenoexiste)) {
-            getDriver().findElement(btnaceptar).click();
+        if (isElementVisible(poupclientenoexistece)) {
+            getDriver().findElement(btnaceptarce).click();
         } else {
             getDriver().findElement(txtprimernombrece).clear();
         }
@@ -231,7 +267,7 @@ public class CrearPedido extends PageObject {
     }
 
     public void ciudad_ce(String ciudad_ce) {
-        Select Ciudad = new Select(getDriver().findElement(selectciudadce));
+        Select Ciudad = new Select(getDriver().findElement(listciudadce));
         Ciudad.selectByVisibleText(ciudad_ce);
     }
 
@@ -268,6 +304,73 @@ public class CrearPedido extends PageObject {
     public void siguientece() {
         getDriver().findElement(btnsiguientece).click();
     }
+
+    /*Formulario Productos*/
+    public void productos(String ean) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+        wait.until(ExpectedConditions.presenceOfElementLocated(txtean));
+        getDriver().findElement(txtean).sendKeys(ean);
+    }
+
+    public void buscarEan() {
+        getDriver().findElement(btnbuscarean).click();
+        if (isElementVisible(popupeansincobertura)) {
+            getDriver().findElement(btnaceptar).click();
+            System.out.println("El ean ingresado no tiene cobertura para la unidad de despacho seleccionada");
+            getDriver().close();
+            if (isElementVisible(popupsinprecio))
+                getDriver().findElement(btnaceptar).click();
+            System.out.println("El ean ingresado no tiene precio");
+            getDriver().close();
+            if (isElementVisible(popupsininventario))
+                getDriver().findElement(btnaceptar).click();
+            System.out.println("El ean ingresado no tiene inventario");
+            getDriver().close();
+        } else
+            System.out.println("El ean ingresado tiene inventario disponible");
+    }
+
+    public void agregarCantidad(String cantidad) {
+        getDriver().findElement(txtcantidad).sendKeys(cantidad);
+        getDriver().findElement(btncarro).click();
+        if (isElementVisible(popupproductoagregado))
+            getDriver().findElement(btnaceptarcarro).click();
+    }
+
+    public void siguienteprod() {
+        getDriver().findElement(btnsiguienteprod).click();
+        if (isElementVisible(pupupproductosagregados))
+            getDriver().findElement(btnaceptarproducto).click();
+    }
+
+
+    /*Formulario Cliente Recoge*/
+
+
+    /*Calendario*/
+    public void calendarioFechaPactadaEntrega() {
+        WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+        wait.until(ExpectedConditions.presenceOfElementLocated(formulariomediospago));
+        boolean CambiarMes = true;
+        getDriver().findElement(selectfecha).click();
+        while (CambiarMes) {
+            List<WebElement> listcalendariodia = getDriver().findElements(listcalendario);
+            System.out.println(listcalendariodia.size());
+            if (listcalendariodia.size() == 0) {
+                getDriver().findElement(btnsiguientemes).click();
+            } else {
+                listcalendariodia.get(0).click();
+                CambiarMes = false;
+            }
+        }
+    }
+    /*Formulario Medios Pago*/
+    public void clicGuardarFecha() {
+    getDriver().findElement(btnguardarfecha).click();
+    getDriver().findElement(popupfechaguardada).click();
+    }
+
+
 
     public void salirChrome() {
         getDriver().close();

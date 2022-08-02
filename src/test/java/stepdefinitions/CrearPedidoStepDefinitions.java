@@ -72,12 +72,16 @@ public class CrearPedidoStepDefinitions {
         pedido.ingresarEmailCE(listadatos.get(0).getEmail_ce());
         pedido.selectGeneroCE(listadatos.get(0).getGenero_ce());
         pedido.clicSiguienteCE();
-        pedido.cerrarChrome();
+
     }
 
     @Then("^Se agregan productos al pedido$")
-    public void se_agregan_productos_al_pedido() {
-
+    public void se_agregan_productos_al_pedido(List<DataTeleventas> listadatos) {
+        pedido.ingresarEan(listadatos.get(0).getEan());
+        pedido.buscarEan();
+        pedido.ingresarCantidad(listadatos.get(0).getCantidad());
+        pedido.clicSiguienteProductos();
+        pedido.cerrarChrome();
     }
 
     @Then("^Se registran los datos del medio de pago$")

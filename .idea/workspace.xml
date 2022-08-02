@@ -4,35 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b4fbf6-f079-456b-a6d0-fb1741a7dbeb" name="Changes" comment="commit 07 de junio 2022 - se crea el codigo de automatizacion para el formulario cliente factura de televentas">
+    <list default="true" id="f1b4fbf6-f079-456b-a6d0-fb1741a7dbeb" name="Changes" comment="commit 15 de junio 2022 - se crea el codigo de automatizacion para el formulario cliente envio de televentas">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/creacionpedidopayucr.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/DataTeleventas.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/DataTeleventas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/page/CrearPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/page/CrearPedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/steps/CrearPedidoSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/steps/CrearPedidoSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/stepdefinitions/CrearPedidoStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/stepdefinitions/CrearPedidoStepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Crear#20un#20pedido#20cliente#20envio#20con#20medio#20de#20pago#20PayU.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.CrearPedidoCEPayuRunner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/runners.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Crear#20un#20pedido#20cliente#20envio#20con#20medio#20de#20pago#20PayU.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/Crear#20un#20pedido#20cliente#20envio#20con#20medio#20de#20pago#20PayU.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.CrearPedidoCEPayuRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/runners.CrearPedidoCEPayuRunner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/runners.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/runners.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/test/features/creacionpedidopayuce.feature" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/features/creacionpedidopayuce.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Crear#20un#20pedido#20cliente#20envio#20con#20medio#20de#20pago#20PayU.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-runners.CrearPedidoCEPayuRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Crear#20un#20pedido#20cliente#20envio#20con#20medio#20de#20pago#20PayU.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-Crear#20un#20pedido#20cliente#20envio#20con#20medio#20de#20pago#20PayU.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-runners.CrearPedidoCEPayuRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-runners.CrearPedidoCEPayuRunner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/DataTeleventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DataTeleventas.java" afterDir="false" />
@@ -123,6 +118,7 @@
     <setting file="file://$PROJECT_DIR$/src/test/java/runners/CrearPedidoCEPayuRunner.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/CrearPedidoStepDefinitions.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/resources/features/creacionpedidopayuce.feature" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/features/creacionpedidopayucr.feature" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -139,6 +135,7 @@
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;1e90d598819071a42140d03e43e328a3&quot;
   }
 }</component>
@@ -150,7 +147,7 @@
       <recent name="PanelCliente.runners" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CrearPedidoCEPayuRunner">
+  <component name="RunManager" selected="Gradle.CRM [clearHistory]">
     <configuration name="CRM [clearHistory]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,8 +216,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.CrearPedidoCEPayuRunner" />
-        <item itemvalue="Gradle.CRM [clearHistory]" />
         <item itemvalue="Gradle.CRM [clearReports]" />
+        <item itemvalue="Gradle.CRM [clearHistory]" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +267,21 @@
       <workItem from="1654716732749" duration="4558000" />
       <workItem from="1655223633838" duration="1086000" />
       <workItem from="1655225970914" duration="3217000" />
-      <workItem from="1655319928248" duration="10568000" />
+      <workItem from="1655319928248" duration="10859000" />
+      <workItem from="1655818568212" duration="3908000" />
+      <workItem from="1655926485266" duration="721000" />
+      <workItem from="1655927753195" duration="1795000" />
+      <workItem from="1656000565008" duration="702000" />
+      <workItem from="1656093222916" duration="5077000" />
+      <workItem from="1656455940660" duration="596000" />
+      <workItem from="1656508765070" duration="162000" />
+      <workItem from="1656510044689" duration="671000" />
+      <workItem from="1657199942091" duration="335000" />
+      <workItem from="1657200342508" duration="16880000" />
+      <workItem from="1658954503141" duration="197000" />
+      <workItem from="1658954929992" duration="1087000" />
+      <workItem from="1659444127477" duration="801000" />
+      <workItem from="1659445858336" duration="2066000" />
     </task>
     <task id="LOCAL-00001" summary="commit 18032022">
       <created>1647618900279</created>
@@ -328,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654645989604</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit 15 de junio 2022 - se crea el codigo de automatizacion para el formulario cliente envio de televentas">
+      <created>1655333282185</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655333282185</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +387,8 @@
     <MESSAGE value="commit 07 abril 2022 - consulta de un cliente en panel cliente en crm cartera" />
     <MESSAGE value="commit 05 mayo 2022 - se elimina automatizacion panel cliente. Se inicia automatizacion de televentas hasta la seleccion de la unidad de venta" />
     <MESSAGE value="commit 07 de junio 2022 - se crea el codigo de automatizacion para el formulario cliente factura de televentas" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 07 de junio 2022 - se crea el codigo de automatizacion para el formulario cliente factura de televentas" />
+    <MESSAGE value="commit 15 de junio 2022 - se crea el codigo de automatizacion para el formulario cliente envio de televentas" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 15 de junio 2022 - se crea el codigo de automatizacion para el formulario cliente envio de televentas" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

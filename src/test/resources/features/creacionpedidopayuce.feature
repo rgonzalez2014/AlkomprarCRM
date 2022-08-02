@@ -15,13 +15,13 @@ Feature: Crear un pedido cliente envio con medio de pago PayU
       | ean   |
       | <Ean> |
     And Se registran los datos del medio de pago
-      | observaciones   |
-      | <Observaciones> |
+      | metodo_pago   | tipo_pago   | link   | observaciones   |
+      | <Metodo_Pago> | <Tipo_Pago> | <Link> | <Observaciones> |
     Then Se crea el pedido quedando en estado confirmacion pago
 
 
     Examples:
-      | Usuario | Password | UnidadVenta | FacturacionElectronica | TipoDocumento | NumeroDocumento | PrimerNombre | SegundoNombre | PrimerApellido | SegundoApellido | Ciudad      | Direccion         | TelefonoCelular | TelefonoFijo | Email                                 | Genero    | AutorizoTratamientoDatos | TipoDocumento_ce | NumeroDocumento_ce | PrimerNombre_ce | SegundoNombre_ce | PrimerApellido_ce | SegundoApellido_ce | Ciudad_ce   | Direccion_ce          | TelefonoCelular_ce | TelefonoFijo_ce | Email_ce                    | Genero_ce | Ean          | Observaciones         |
-      | asesor1 | 123      | AKB68       | Si                     | C.C           | 80817985        | Roger        | Andres        | Gonzalez       | Gonzalez        | Bogotá d.c. | Calle 135 # 90 33 | 3203003038      | 6813271      | roger.gonzalez.ext@colcomercio.com.co | Masculino | No                       | C.C              | 35505690           | Martha          | Cecilia          | Gonzalez          | Parga              | Bogotá d.c. | calle 137 a # 98 b 04 | 3114997063         | 8009091         | 80817985@colcomercio.com.co | Femenino  | 723755138421 | Pruebas automatizadas |
+      | Usuario | Password | UnidadVenta | FacturacionElectronica | TipoDocumento | NumeroDocumento | PrimerNombre | SegundoNombre | PrimerApellido | SegundoApellido | Ciudad      | Direccion         | TelefonoCelular | TelefonoFijo | Email                                 | Genero    | AutorizoTratamientoDatos | TipoDocumento_ce | NumeroDocumento_ce | PrimerNombre_ce | SegundoNombre_ce | PrimerApellido_ce | SegundoApellido_ce | Ciudad_ce   | Direccion_ce          | TelefonoCelular_ce | TelefonoFijo_ce | Email_ce                    | Genero_ce | Ean          | Metodo_Pago | Tipo_Pago           | Link  | Observaciones         |
+      | asesor1 | 123      | AKB68       | Si                     | C.C           | 80817985        | Roger        | Andres        | Gonzalez       | Gonzalez        | Bogotá d.c. | Calle 135 # 90 33 | 3203003038      | 6813271      | roger.gonzalez.ext@colcomercio.com.co | Masculino | No                       | C.C              | 35505690           | Martha          | Cecilia          | Gonzalez          | Parga              | Bogotá d.c. | calle 137 a # 98 b 04 | 3114997063         | 8009091         | 80817985@colcomercio.com.co | Femenino  | 723755138421 | Payu        | PSE/Tarjeta crédito | Email | Pruebas automatizadas |
 
 

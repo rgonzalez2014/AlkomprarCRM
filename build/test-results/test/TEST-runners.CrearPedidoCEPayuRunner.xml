@@ -6,13 +6,87 @@
 ?[31msrc/test/resources/features/creacionpedidopayuce.feature:25 ?[0m# Creacion pedido cliente envio con medio de pago PayU
 
 1 Scenarios (?[31m1 failed?[0m)
-7 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m, ?[32m4 passed?[0m)
-1m17,352s
+7 Steps (?[31m1 failed?[0m, ?[36m6 skipped?[0m)
+0m7,205s
 
-cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'stepdefinitions.CrearPedidoStepDefinitions.se_agregan_productos_al_pedido() in file:/C:/Users/80817985/IdeaProjects/CRM/build/classes/java/test/' with pattern [^Se agregan productos al pedido$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[ean], [723755138421]]]. 
-Step text: Se agregan productos al pedido
-	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:111)
-	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:66)
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at steps.CrearPedidoSteps.abrirCMPQR(CrearPedidoSteps.java:15)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.CGLIB$abrirCMPQR$21(<generated>)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a$$FastClassByCGLIB$$34c0241e.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.abrirCMPQR(<generated>)
+	at stepdefinitions.CrearPedidoStepDefinitions.se_despliega_la_pagina_cmpqr_cartera_e_ingresan_las_credenciales(CrearPedidoStepDefinitions.java:19)
+	at ?.Se despliega la pagina cmpqr_cartera e ingresan las credenciales(src/test/resources/features/creacionpedidopayuce.feature:4)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.134 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DIBOG-AGROGER', ip: '192.169.26.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x007AB8F3+2406643]
+	Ordinal0 [0x0073AF31+1945393]
+	Ordinal0 [0x0062C748+837448]
+	Ordinal0 [0x0064C8B3+968883]
+	Ordinal0 [0x006484BA+951482]
+	Ordinal0 [0x00645D71+941425]
+	Ordinal0 [0x00678EE0+1150688]
+	Ordinal0 [0x00678B3A+1149754]
+	Ordinal0 [0x00674096+1130646]
+	Ordinal0 [0x0064E636+976438]
+	Ordinal0 [0x0064F546+980294]
+	GetHandleVerifier [0x00A19612+2498066]
+	GetHandleVerifier [0x00A0C920+2445600]
+	GetHandleVerifier [0x00844F2A+579370]
+	GetHandleVerifier [0x00843D36+574774]
+	Ordinal0 [0x00741C0B+1973259]
+	Ordinal0 [0x00746688+1992328]
+	Ordinal0 [0x00746775+1992565]
+	Ordinal0 [0x0074F8D1+2029777]
+	BaseThreadInitThunk [0x76B16739+25]
+	RtlGetFullPathName_UEx [0x77CC8FEF+1215]
+	RtlGetFullPathName_UEx [0x77CC8FBD+1165]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:158)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at steps.CrearPedidoSteps.abrirCMPQR(CrearPedidoSteps.java:15)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.CGLIB$abrirCMPQR$21(<generated>)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a$$FastClassByCGLIB$$34c0241e.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at steps.CrearPedidoSteps$$EnhancerByCGLIB$$dc8a285a.abrirCMPQR(<generated>)
+	at stepdefinitions.CrearPedidoStepDefinitions.se_despliega_la_pagina_cmpqr_cartera_e_ingresan_las_credenciales(CrearPedidoStepDefinitions.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
 	at cucumber.api.TestStep.executeStep(TestStep.java:102)
 	at cucumber.api.TestStep.run(TestStep.java:83)
@@ -60,6 +134,67 @@ Step text: Se agregan productos al pedido
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.134 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DIBOG-AGROGER', ip: '192.169.26.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x007AB8F3+2406643]
+	Ordinal0 [0x0073AF31+1945393]
+	Ordinal0 [0x0062C748+837448]
+	Ordinal0 [0x0064C8B3+968883]
+	Ordinal0 [0x006484BA+951482]
+	Ordinal0 [0x00645D71+941425]
+	Ordinal0 [0x00678EE0+1150688]
+	Ordinal0 [0x00678B3A+1149754]
+	Ordinal0 [0x00674096+1130646]
+	Ordinal0 [0x0064E636+976438]
+	Ordinal0 [0x0064F546+980294]
+	GetHandleVerifier [0x00A19612+2498066]
+	GetHandleVerifier [0x00A0C920+2445600]
+	GetHandleVerifier [0x00844F2A+579370]
+	GetHandleVerifier [0x00843D36+574774]
+	Ordinal0 [0x00741C0B+1973259]
+	Ordinal0 [0x00746688+1992328]
+	Ordinal0 [0x00746775+1992565]
+	Ordinal0 [0x0074F8D1+2029777]
+	BaseThreadInitThunk [0x76B16739+25]
+	RtlGetFullPathName_UEx [0x77CC8FEF+1215]
+	RtlGetFullPathName_UEx [0x77CC8FBD+1165]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:64)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:60)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:169)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:150)
+	... 74 more
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 

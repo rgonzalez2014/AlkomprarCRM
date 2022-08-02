@@ -31,10 +31,22 @@ public class DataTeleventas {
     String telefonofijo_ce;
     String email_ce;
     String genero_ce;
+    String tipodocumento_cr;
+    String numerodocumento_cr;
+    String primernombre_cr;
+    String segundonombre_cr;
+    String primerapellido_cr;
+    String segundoapellido_cr;
+    String telefonocelular_cr;
+    String recoge_en;
     String ean;
+    String cantidad;
+    String metodo_pago;
+    String tipo_pago;
+    String link;
     String observaciones;
 
-    public DataTeleventas(String usuario, String password, String unidadventa, String facturacionelectronica, String tipodocumento, String numerodocumento, String primernombre, String segundonombre, String primerapellido, String segundoapellido, String ciudad, String direccion, String telefonocelular, String telefonofijo, String email, String genero, String autorizotratamientodatos, String tipodocumento_ce, String numerodocumento_ce, String primernombre_ce, String segundonombre_ce, String primerapellido_ce, String segundoapellido_ce, String ciudad_ce, String direccion_ce, String telefonocelular_ce, String telefonofijo_ce, String email_ce, String genero_ce, String ean, String observaciones) {
+    public DataTeleventas(String usuario, String password, String unidadventa, String facturacionelectronica, String tipodocumento, String numerodocumento, String primernombre, String segundonombre, String primerapellido, String segundoapellido, String ciudad, String direccion, String telefonocelular, String telefonofijo, String email, String genero, String autorizotratamientodatos, String tipodocumento_ce, String numerodocumento_ce, String primernombre_ce, String segundonombre_ce, String primerapellido_ce, String segundoapellido_ce, String ciudad_ce, String direccion_ce, String telefonocelular_ce, String telefonofijo_ce, String email_ce, String genero_ce, String tipodocumento_cr, String numerodocumento_cr, String primernombre_cr, String segundonombre_cr, String primerapellido_cr, String segundoapellido_cr, String telefonocelular_cr, String recoge_en, String ean, String cantidad, String metodo_pago, String tipo_pago, String link, String observaciones) {
         this.usuario = usuario;
         this.password = password;
         this.unidadventa = unidadventa;
@@ -64,7 +76,19 @@ public class DataTeleventas {
         this.telefonofijo_ce = telefonofijo_ce;
         this.email_ce = email_ce;
         this.genero_ce = genero_ce;
+        this.tipodocumento_cr = tipodocumento_cr;
+        this.numerodocumento_cr = tipodocumento_cr;
+        this.primernombre_cr = primernombre_cr;
+        this.segundonombre_cr = segundonombre_cr;
+        this.primerapellido_cr = primerapellido_cr;
+        this.segundoapellido_cr = segundoapellido_cr;
+        this.telefonocelular_cr = telefonocelular_cr;
+        this.recoge_en = recoge_en;
         this.ean = ean;
+        this.cantidad = cantidad;
+        this.metodo_pago = metodo_pago;
+        this.tipo_pago = tipo_pago;
+        this.link = link;
         this.observaciones = observaciones;
     }
 
@@ -184,8 +208,56 @@ public class DataTeleventas {
         return genero_ce;
     }
 
+    public String getTipodocumento_cr() {
+        return tipodocumento_cr;
+    }
+
+    public String getNumerodocumento_cr() {
+        return numerodocumento_cr;
+    }
+
+    public String getPrimernombre_cr() {
+        return primernombre_cr;
+    }
+
+    public String getSegundonombre_cr() {
+        return segundonombre_cr;
+    }
+
+    public String getPrimerapellido_cr() {
+        return primerapellido_cr;
+    }
+
+    public String getSegundoapellido_cr() {
+        return segundoapellido_cr;
+    }
+
+    public String getTelefonocelular_cr() {
+        return telefonocelular_cr;
+    }
+
+    public String getRecoge_en() {
+        return recoge_en;
+    }
+
     public String getEan() {
         return ean;
+    }
+
+    public String getCantidad() {
+        return cantidad;
+    }
+
+    public String getMetodo_pago() {
+        return metodo_pago;
+    }
+
+    public String getTipo_pago() {
+        return tipo_pago;
+    }
+
+    public String getLink() {
+        return link;
     }
 
     public String getObservaciones() {

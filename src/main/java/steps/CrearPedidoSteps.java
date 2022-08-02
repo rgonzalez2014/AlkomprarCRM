@@ -140,7 +140,7 @@ public class CrearPedidoSteps {
         creacionPOM.siguientecf();
     }
 
-    public void formularioClienteEnvio(){
+    public void formularioClienteEnvio() {
         creacionPOM.verFormularioClienteEnvio();
     }
 
@@ -217,6 +217,26 @@ public class CrearPedidoSteps {
     @Step
     public void clicSiguienteCE() {
         creacionPOM.siguientece();
+    }
+
+    @Step
+    public void ingresarEan(String ean) {
+        creacionPOM.productos(ean);
+    }
+
+    @Step
+    public void buscarEan() {
+        creacionPOM.buscarEan();
+    }
+
+    @Step
+    public void ingresarCantidad(String cantidad) {
+        creacionPOM.agregarCantidad(cantidad);
+    }
+
+    @Step
+    public void clicSiguienteProductos(){
+        creacionPOM.siguienteprod();
     }
 
     @Step
